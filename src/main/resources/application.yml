@@ -1,0 +1,17 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          discord:
+            client-id: client-id
+            client-secret: client-secret
+            scope: identify, guilds
+            authorization-grant-type: authorization_code
+            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+        provider:
+          discord:
+            authorization-uri: https://discord.com/oauth2/authorize
+            token-uri: https://discord.com/api/v10/oauth2/token
+            user-info-uri: https://discord.com/api/v10/users/@me
+            user-name-attribute: username
