@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class KoalaDiscordBackendApplication {
+public class DiscordOAuth2Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(KoalaDiscordBackendApplication.class, args);
+        SpringApplication.run(DiscordOAuth2Application.class, args);
     }
 
 }
